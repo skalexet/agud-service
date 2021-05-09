@@ -1,4 +1,4 @@
-import React, { useContext, useReducer, useEffect } from 'react'
+import React, { useContext, useReducer } from 'react'
 import reducer from '../reducer';
 
 const CartContext = React.createContext();
@@ -20,9 +20,7 @@ const CartProvider = ({ children }) => {
         dispatch({ type: 'REMOVE', payload: id })
         getTotals();
     }
-    const fetchData = async () => {
-        dispatch({ type: 'DISPLAY_ITEMS', payload: state.cart })
-    }
+     
     const getTotals = () => {
         dispatch({ type: 'GET_TOTALS', payload: state });
     }
@@ -43,10 +41,7 @@ const CartProvider = ({ children }) => {
         getTotals();
     }
 
-    useEffect(() => {
-        fetchData();
-        getTotals();
-    }, []);
+    
 
     return (
         <CartContext.Provider

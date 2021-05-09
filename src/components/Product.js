@@ -10,12 +10,16 @@ function Product({ id, title, img, price }) {
         <>
             <article className='product'>
                 <strong>{title}</strong>
-                <img src={img} alt={img} />
+                <Link to={`/products/${id}`}>
+                    <img src={img} alt={img} />
+                </Link>
                 <small>${price}</small>
                 <Link to={`/products/${id}`}>
                     <span>See more</span>
                 </Link>
-                <strong onClick={() => addToCart(id)}>Add To The Cart</strong>
+                <div onClick={() => addToCart(id)} className='add-btn'>
+                    Add To The Cart
+                </div>
             </article>
         </>
     )

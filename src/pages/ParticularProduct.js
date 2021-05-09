@@ -1,11 +1,9 @@
-import React, { Component, useEffect } from 'react'
+import React, { Component } from 'react'
 import { AppContext } from '../contexts/AppContext'
-import Product from '../components/Product'
 
 export default class ParticularProduct extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
             id: this.props.match.params.id,
         }
@@ -19,9 +17,11 @@ export default class ParticularProduct extends Component {
 
         return (
             <>
-                <h1>{product.title}</h1>
-                <img src={product.img}></img>
-                <small>${product.price}</small>
+                <div className='particular-product'>
+                    <strong>{product.title}</strong>
+                    <img src={product.img}></img>
+                    <small>${product.price}</small>
+                </div>
             </>
         )
     }

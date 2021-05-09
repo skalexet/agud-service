@@ -3,6 +3,32 @@ import ferrari from './img/ferrari.png'
 import bmw from './img/bmw.png'
 import amg from './img/amg.png'
 import motorcycle from './img/motorcycle.png'
+import sheek from './img/sheek.png'
+import frozen from './img/frozen.png'
+import stoolen from './img/stoolen.png'
+import garbage from './img/garbage.png'
+import flowers from './img/flowers.png'
+import bucket from './img/bucket.png'
+import flask from './img/flask.png'
+import drawing from './img/drawing.png'
+import motorfire from './img/motorfire.png'
+import ferraryup from './img/ferraryup.png'
+import cetroon from './img/cetroon.png'
+import loper from './img/loper.png'
+import sharow from './img/sharow.png'
+import crazy from './img/crazy.png'
+import oposite from './img/oposite.png'
+import forever from './img/forever.png'
+import surrogate from './img/surrogate.png'
+import volvo from './img/volvo.png'
+import franklin from './img/franklin.png'
+import horilla from './img/horilla.png'
+import freak from './img/freak.png'
+import orange from './img/orange.png'
+import grandma from './img/grandma.png'
+import wtf from './img/wtf.png'
+import memory from './img/memory.png'
+import gorowwwitz from './img/gorowwwitz.png'
 
 export default [
     {
@@ -49,7 +75,7 @@ export default [
         id: 6,
         title: 'Sheek perl',
         price: 1809.99,
-        img: motorcycle,
+        img: sheek,
         amount: 1,
         category: 'engines'
     },
@@ -57,7 +83,7 @@ export default [
         id: 7,
         title: 'Frozen curl',
         price: 1809.99,
-        img: motorcycle,
+        img: frozen,
         amount: 1,
         category: 'engines'
     },
@@ -65,7 +91,7 @@ export default [
         id: 8,
         title: 'Stoolen bug',
         price: 1425.99,
-        img: motorcycle,
+        img: stoolen,
         amount: 1,
         category: 'engines'
     },
@@ -73,7 +99,7 @@ export default [
         id: 9,
         title: 'Garbage temple',
         price: 1234.99,
-        img: motorcycle,
+        img: garbage,
         amount: 1,
         category: 'engines'
     },
@@ -81,7 +107,7 @@ export default [
         id: 10,
         title: 'Flowers green',
         price: 1809.99,
-        img: motorcycle,
+        img: flowers,
         amount: 1,
         category: 'engines'
     },
@@ -89,7 +115,7 @@ export default [
         id: 11,
         title: 'Bucket roage',
         price: 1809.99,
-        img: motorcycle,
+        img: bucket,
         amount: 1,
         category: 'engines'
     },
@@ -97,7 +123,7 @@ export default [
         id: 12,
         title: 'Flask componet',
         price: 1532.99,
-        img: motorcycle,
+        img: flask,
         amount: 1,
         category: 'engines'
     },
@@ -105,7 +131,7 @@ export default [
         id: 13,
         title: 'Drawing the shoose',
         price: 1753.99,
-        img: motorcycle,
+        img: drawing,
         amount: 1,
         category: 'engines'
     },
@@ -113,7 +139,7 @@ export default [
         id: 14,
         title: 'MotorFire Engine',
         price: 1467.99,
-        img: motorcycle,
+        img: motorfire,
         amount: 1,
         category: 'engines'
     },
@@ -121,7 +147,7 @@ export default [
         id: 15,
         title: 'Ferraryup pops',
         price: 1809.99,
-        img: motorcycle,
+        img: ferraryup,
         amount: 1,
         category: 'wheels'
     },
@@ -129,7 +155,7 @@ export default [
         id: 16,
         title: 'Cetroon Wheels',
         price: 1809.99,
-        img: motorcycle,
+        img: cetroon,
         amount: 1,
         category: 'wheels'
     },
@@ -137,7 +163,7 @@ export default [
         id: 17,
         title: 'Loper topler',
         price: 1436.99,
-        img: motorcycle,
+        img: loper,
         amount: 1,
         category: 'wheels'
     },
@@ -145,7 +171,7 @@ export default [
         id: 18,
         title: 'Sharow repor',
         price: 1578.99,
-        img: motorcycle,
+        img: sharow,
         amount: 1,
         category: 'wheels'
     },
@@ -153,7 +179,7 @@ export default [
         id: 19,
         title: 'Motorcycle such as a crazy',
         price: 1809.99,
-        img: motorcycle,
+        img: crazy,
         amount: 1,
         category: 'wheels'
     },
@@ -161,7 +187,7 @@ export default [
         id: 20,
         title: 'Oposite circle',
         price: 1386.99,
-        img: motorcycle,
+        img: oposite,
         amount: 1,
         category: 'wheels'
     },
@@ -169,7 +195,7 @@ export default [
         id: 21,
         title: 'Forever young',
         price: 14375.99,
-        img: motorcycle,
+        img: forever,
         amount: 1,
         category: 'wheels'
     },
@@ -177,112 +203,80 @@ export default [
         id: 22,
         title: 'Surrogate pair',
         price: 1809.99,
-        img: motorcycle,
+        img: surrogate,
         amount: 1,
         category: 'wheels'
-    },
-    {
-        id: 23,
-        title: 'Motorcycle Engine',
-        price: 1809.99,
-        img: motorcycle,
-        amount: 1,
-        category: 'seats'
     },
     {
         id: 24,
         title: 'Volvo is Good',
         price: 1809.99,
-        img: motorcycle,
+        img: volvo,
         amount: 1,
-        category: 'seats'
+        category: 'bearing'
     },
     {
         id: 25,
         title: 'Franklin Stein',
         price: 1359.99,
-        img: motorcycle,
+        img: franklin,
         amount: 1,
-        category: 'seats'
-    },
-    {
-        id: 26,
-        title: 'Back to the Times',
-        price: 1809.99,
-        img: motorcycle,
-        amount: 1,
-        category: 'seats'
+        category: 'bearing'
     },
     {
         id: 27,
         title: 'Horilla`s Durring',
         price: 1002.99,
-        img: motorcycle,
+        img: horilla,
         amount: 1,
-        category: 'seats'
+        category: 'bearing'
     },
     {
         id: 28,
         title: 'Freak It Out',
         price: 999.99,
-        img: motorcycle,
+        img: freak,
         amount: 1,
-        category: 'seats'
+        category: 'bearing'
     },
     {
         id: 29,
         title: 'Orange Hollywood',
         price: 1809.99,
-        img: motorcycle,
+        img: orange,
         amount: 1,
-        category: 'seats'
+        category: 'bearing'
     },
     {
         id: 30,
         title: 'Grandma is Hipster',
         price: 999.99,
-        img: motorcycle,
+        img: grandma,
         amount: 1,
-        category: 'seats'
-    },
-    {
-        id: 31,
-        title: 'What do ya have been ei',
-        price: 1749.99,
-        img: motorcycle,
-        amount: 1,
-        category: 'seats'
+        category: 'bearing'
     },
     {
         id: 32,
         title: 'WTF',
         price: 1899.99,
-        img: motorcycle,
+        img: wtf,
         amount: 1,
-        category: 'seats'
+        category: 'bearing'
     },
     {
         id: 33,
         title: 'Memory is updated',
         price: 999.99,
-        img: motorcycle,
+        img: memory,
         amount: 1,
-        category: 'seats'
-    },
-    {
-        id: 34,
-        title: 'Flasking Junkle',
-        price: 1999.99,
-        img: motorcycle,
-        amount: 1,
-        category: 'engines'
+        category: 'bearing'
     },
     {
         id: 35,
         title: 'Gorowwwitz Principle',
         price: 3297.99,
-        img: motorcycle,
+        img: gorowwwitz,
         amount: 1,
-        category: 'seats'
+        category: 'bearing'
     }
 ]

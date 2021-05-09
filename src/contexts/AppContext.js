@@ -14,29 +14,30 @@ export default class AppProvider extends Component {
         filteredProducts: [],
     }
 
-
     componentDidMount() {
         this.setState({
             products: items,
             categories: this.getUniqueCategories(items, 'category'),
             current: 'all',
-            maxPrice: this.getMaxPrice(),
-            minPrice: this.getMinPrice(),
-            price: this.maxPrice
+            maxPrice: this.getMaxMinPrice('max'),
+            minPrice: this.getMaxMinPrice('min'),
+            price: this.getMaxMinPrice('max'),
+            fixedMax: this.getMaxMinPrice('max'),
+            fixedMin: this.getMaxMinPrice('min'),
+            filteredProducts: items,
         })
     }
 
 
-    filterTheProduct() {
+    filterTheProduct(products) {
         let {
-            products,
             current,
             maxPrice,
+            minPrice,
             filteredProducts
         } = this.state;
 
         let array = [...products];
-
 
         new Promise((res, rej) => {
             res(() => {
@@ -44,7 +45,8 @@ export default class AppProvider extends Component {
                     array = array.filter(product => product.category == current)
                 }
 
-                array = array.filter(product => product.price <= maxPrice)
+                array = array.filter(product => product.price <= maxPrice &&
+                    product.price >= minPrice)
                 return array;
             })
         })
@@ -54,19 +56,17 @@ export default class AppProvider extends Component {
                 })
             })
             .catch(err => console.log(err))
-
     }
 
-    getMaxPrice() {
-        const productsPrices = items.map(product => product.price);
-        return Math.max(...productsPrices);
+    getMaxMinPrice(value) {
+        if (value == 'max') {
+            const productsPrices = items.map(product => product.price);
+            return Math.max(...productsPrices);
+        } else if (value == 'min') {
+            const productsPrices = items.map(product => product.price);
+            return Math.min(...productsPrices);
+        }
     }
-
-    getMinPrice() {
-        const productsPrices = items.map(product => product.price);
-        return Math.min(...productsPrices);
-    }
-
 
     handleChange = (property, value) => {
         new Promise((res) => {
@@ -75,7 +75,7 @@ export default class AppProvider extends Component {
             }));
         })
             .then(res => {
-                this.filterTheProduct()
+                this.filterTheProduct(this.state.products)
             })
             .catch(err => console.log(err))
     }
@@ -92,14 +92,17 @@ export default class AppProvider extends Component {
         const array = [];
 
         for (let item of items) {
-            if (item.title.includes(event.target.value) ||
-                item.category.includes(event.target.value)
+            const title = item.title.toLowerCase();
+            const category = item.category.toLowerCase();
+
+            if (title.includes(event.target.value) ||
+                category.includes(event.target.value)
             ) {
                 array.push(item);
             }
         }
-        console.log(array)
-        this.handleChange('filteredProducts', array);
+
+        this.filterTheProduct(array);
     }
 
     getParticularProduct(products, id) {

@@ -6,11 +6,11 @@ import { AppContext } from '../contexts/AppContext'
 
 function Home() {
     const context = useContext(AppContext);
-    let { products, categories, handleChange } = context;
+    let { categories, handleChange } = context;
 
     return (
-        <div>
-            Categories:
+        <>
+        <div className='home'>
             {categories.map((category, i) => {
                 return (
                     <div key={i} onClick={() => handleChange('current', category)}>
@@ -22,6 +22,7 @@ function Home() {
             })
             }
         </div>
+        </>
     )
 }
 

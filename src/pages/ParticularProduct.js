@@ -19,7 +19,7 @@ export default class ParticularProduct extends Component {
             <>
                 <div className='particular-product'>
                     <strong>{product.title}</strong>
-                    <img src={product.img}></img>
+                    <img src={product.img} alt='img'></img>
                     <small>${product.price}</small>
                 </div>
             </>

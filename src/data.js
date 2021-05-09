@@ -30,7 +30,7 @@ import wtf from './img/wtf.png'
 import memory from './img/memory.png'
 import gorowwwitz from './img/gorowwwitz.png'
 
-export default [
+const data = [
     {
         id: 1,
         title: 'Lamborghini Roadster Engine',
@@ -280,3 +280,5 @@ export default [
         category: 'bearing'
     }
 ]
+
+export default data;

@@ -10,7 +10,6 @@ function ProductFilter() {
         handleChange,
         maxPrice,
         minPrice,
-        price,
         fixedMax,
         fixedMin
     } = context;

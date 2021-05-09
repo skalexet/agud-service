@@ -4,7 +4,7 @@ import { FaAngleUp } from 'react-icons/fa'
 import { FaAngleDown } from 'react-icons/fa'
 
 function CartItem({ id, img, title, price, amount }) {
-    const { remove, increase, decrease, toggleAmount } = useGlobalContext();
+    const { remove, toggleAmount } = useGlobalContext();
 
     return (
         <div>

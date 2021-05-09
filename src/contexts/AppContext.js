@@ -34,7 +34,6 @@ export default class AppProvider extends Component {
             current,
             maxPrice,
             minPrice,
-            filteredProducts
         } = this.state;
 
         let array = [...products];
@@ -42,7 +41,7 @@ export default class AppProvider extends Component {
         new Promise((res, rej) => {
             res(() => {
                 if (current !== 'all') {
-                    array = array.filter(product => product.category == current)
+                    array = array.filter(product => product.category === current)
                 }
 
                 array = array.filter(product => product.price <= maxPrice &&
@@ -59,10 +58,10 @@ export default class AppProvider extends Component {
     }
 
     getMaxMinPrice(value) {
-        if (value == 'max') {
+        if (value === 'max') {
             const productsPrices = items.map(product => product.price);
             return Math.max(...productsPrices);
-        } else if (value == 'min') {
+        } else if (value === 'min') {
             const productsPrices = items.map(product => product.price);
             return Math.min(...productsPrices);
         }
@@ -107,7 +106,7 @@ export default class AppProvider extends Component {
 
     getParticularProduct(products, id) {
         for (let product of products) {
-            if (product.id == id) return product;
+            if (product.id === id) return product;
         }
     }
 

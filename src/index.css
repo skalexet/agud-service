@@ -5,9 +5,79 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.071em;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.nav h3 {
+  font-size: 2em;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.nav-container img {
+  color: #fff;
+}
+
+.cart {
+}
+
+.cart header {
+  border-bottom: 1px solid lightslategrey;
+}  
+
+.cart h2 {
+  margin: 1em auto;
+  font-style: normal;
+  width: fit-content;
+}
+
+.cart-item {
+  margin: 1em auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 70%;
+}
+
+.cart-item img {
+  width: 21vw;
+}
+
+.product {
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 70%;
+  width: fit-content;
+  border: 1px solid grey;
+}
+
+.product img {
+  width: 21vw;
+}
+
+.cart button {
+  background: transparent;
+  border: none;
+  background-color: rgba(17, 46, 17, 0.692);
+  color: #f0f0f0;
+}
+
+.amount-btn {
+  fill: #000;
 }
